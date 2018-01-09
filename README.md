@@ -5,7 +5,7 @@
 [![Twitter Follow][twitter-image]][twitter-url]
 
 [npm-image]:http://img.shields.io/npm/v/nativescript-ngx-iphonex-safe-area.svg
-[npm-url]:https://npmjs.org/package/nativescript-ngx-iphonex-safe-area-tap
+[npm-url]:https://npmjs.org/package/nativescript-ngx-iphonex-safe-area
 [downloads-image]:http://img.shields.io/npm/dm/nativescript-ngx-iphonex-safe-area.svg
 [twitter-image]:https://img.shields.io/twitter/follow/xmr_nkr.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/xmr_nkr
