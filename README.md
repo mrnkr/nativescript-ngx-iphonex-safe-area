@@ -1,12 +1,12 @@
-# nativescript-ngx-debounce-tap
+# nativescript-ngx-iphonex-safe-area
 
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][npm-url]
 [![Twitter Follow][twitter-image]][twitter-url]
 
-[npm-image]:http://img.shields.io/npm/v/nativescript-ngx-debounce-tap.svg
-[npm-url]:https://npmjs.org/package/nativescript-ngx-debounce-tap
-[downloads-image]:http://img.shields.io/npm/dm/nativescript-ngx-debounce-tap.svg
+[npm-image]:http://img.shields.io/npm/v/nativescript-ngx-iphonex-safe-area.svg
+[npm-url]:https://npmjs.org/package/nativescript-ngx-iphonex-safe-area-tap
+[downloads-image]:http://img.shields.io/npm/dm/nativescript-ngx-iphonex-safe-area.svg
 [twitter-image]:https://img.shields.io/twitter/follow/xmr_nkr.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/xmr_nkr
 
@@ -57,8 +57,8 @@ In case your project uses scss instead, use this syntax to import the classes...
 
 ### The result will be something like this...
 
-![Screenshot portrait](demo/app/assets/screenshot-portrait.png)
-![Screenshot landscape](demo/app/assets/screenshot-landscape.png)
+| ![Screenshot portrait](demo/app/assets/screenshot-portrait.png) | ![Screenshot landscape](demo/app/assets/screenshot-landscape.png) |
+| --- | --- |
 
 Notice those blueish painted areas? Well, those are the safe area!
 
