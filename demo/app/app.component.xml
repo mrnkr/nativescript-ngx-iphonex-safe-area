@@ -1,0 +1,36 @@
+<GridLayout columns="*" rows="auto, *, auto, auto, auto" class="page" style="background-color: #fff" *ngIf="visible" [@fadeInOut]="visible ? 'active' : 'inactive'" iPhoneX [mind]="mind" [padding]="props.padding" #self>
+  <StackLayout col="0" row="0" class="m-25" orientation="vertical">
+    <FlexboxLayout flexDirection="row-reverse" justifyContent="space-between" alignItems="center">
+      <Label class="ion p-5" 
+             style="color: #000"
+             ngDebounceTap
+             [anim]="'opacity'"
+             (debounceTap)="showInfo()"
+             [text]="'ion-ios-information-circle-outline' | fonticon"></Label>
+      <Label class="ion p-5" 
+             style="color: #000"
+             ngDebounceTap
+             [anim]="'opacity'"
+             (debounceTap)="share()"
+             [text]="'ion-ios-share-outline' | fonticon"></Label>
+    </FlexboxLayout>
+
+    <Label style="font-weight: bold; font-size: 36; color: #000" class="p-x-2 p-t-10" text="iPhoneX-Proof"></Label>
+  </StackLayout>
+
+  <ListView col="0" row="1" class="list-group" [items]="props | array">
+    <ng-template let-item="item" let-even="even">
+      <FlexboxLayout flexDirection="row" justifyContent="space-between" alignItems="center" style="width: 100%" class="list-group-item">
+        <Label [text]="item.key"></Label>
+        <Switch [checked]="item.value" (checkedChange)="onCheckedChange(item.key, $event.object.checked)" class="switch"></Switch>
+      </FlexboxLayout>
+    </ng-template>
+  </ListView>
+
+  <Button col="0" row="2" class="btn btn-outline btn-active btn-rounded-lg" (tap)="reload()" text="Reload Constraints"></Button>
+
+  <Label col="0" row="3" class="footnote text-center text-muted m-t-10 m-x-15 m-b-5" textWrap="true" 
+         text="Make the changes you want and then reload."></Label>
+  <Label col="0" row="4" class="footnote text-center text-muted m-t-5 m-x-15 m-b-20" textWrap="true"
+         text="The directive processes all orientation agnostic data OnInit, which is enough for regular use cases."></Label>
+</GridLayout>
