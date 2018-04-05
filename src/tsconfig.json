@@ -19,9 +19,17 @@
             ]
         }
     },
+    "include": [
+        "angular/*"
+    ],
     "exclude": [
         "node_modules",
         "platforms",
         "**/*.aot.ts"
-    ]
+    ],
+    "angularCompilerOptions": {
+        "genDir": "aot",
+        "skipMetadataEmit": false,
+        "skipTemplateCodegen": true        
+    }    
 }
