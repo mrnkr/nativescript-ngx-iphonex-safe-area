@@ -60,7 +60,7 @@ In case your project uses scss instead, use this syntax to import the classes...
 | ![Screenshot portrait](demo/app/assets/screenshot-portrait.png) | ![Screenshot landscape](demo/app/assets/screenshot-landscape.png) |
 | --- | --- |
 
-Notice those blueish painted areas? Well, those are the safe area!
+Notice those blueish painted areas? Well, those are the unsafe area, all the rest is where your interface should be.
 
 If you want a quickstart, [check out the demo app](https://github.com/mrnkr/nativescript-ngx-iphonex-safe-area/tree/master/demo).
 
