@@ -14,7 +14,7 @@ export function getDeviceName(): string {
   if (betterModel) {
     return betterModel.toString();
   } else {
-    return this.model;
+    return getModel();
   }
 }
 
